@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
 
+
+
 * {
   font-family: 'Raleway', sans-serif;
 }
@@ -18,6 +20,25 @@ body {
     padding: 0;
     font-family: 'Raleway', sans-serif;
     background-color: white;
+}
+
+.wrapper{
+  position: fixed;
+  background: white;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+
+.logo-svg{
+  position: relative;
+  left:50%;
+  top:50%;
+  margin: -75px 0px 0px -75px;
+  width: 150px;
+  z-index: 1001;
 }
 
 .home-background{
@@ -207,6 +228,7 @@ nav ul {
     font-size: 1.5rem;
     text-transform: uppercase;
     width: 100%;
+    line-height: 1.5em;
 }
 
 #home .home-text-container a {
@@ -323,6 +345,8 @@ nav ul {
   overflow: hidden;
   position: relative;
   border-radius: 1em;
+  width: 15em;
+  height: 15em;
 }
 
 #members .img-area img {
@@ -434,6 +458,39 @@ nav ul {
   border-radius: 0.5em;
   color: white;
 }
+
+#workshops {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  top: 0em;
+  padding-top: 6em;
+  padding-bottom: 5em;
+}
+
+#workshops .workshop-container {
+  width:100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#workshops .workshop-timeline {
+  position: relative;
+  padding-left: 33%;
+  padding-top: 5em;
+  width: 100%;
+  height: auto;
+  padding-bottom: 3em;
+}
+
+#workshops svg {
+  padding: 0;
+}
+
+
 
 .footer-sec {
   position: relative;
@@ -665,7 +722,9 @@ nav ul {
   }
 
   #home .small-circles {
-    display: none;
+    top: 0em;
+    left: 0em;
+    width: 50em;
   }
 
   #home .home-text-container {
@@ -706,6 +765,25 @@ nav ul {
 
   #contact .question {
     padding-left: 3em;
+  }
+
+  #workshops {
+    padding-bottom: 0em;
+  }
+
+  #workshops .workshop-timeline {
+    padding-bottom: 0em;
+  }
+
+  #workshops .workshop-timeline {
+    padding-left: 3em;
+    padding-top: 3em;
+
+  }
+
+  #workshops svg {
+    width: 90vw;
+    height: auto;
   }
 
 }
