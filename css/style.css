@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+}
+
+.purple-circle {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 30%;
+    top: -15%;
+    z-index: 1;
+}
+
+.yellow-circle-1 {
+    position: fixed;
+    width: 10%;
+    height: 100%;
+    left: 0;
+    top: -20em;
+    z-index: 1;
+}
+
+.small-circles {
+    position: fixed;
+    width: 40%;
+    height: 100%;
+    left: 6em;
+    top: 5em;
+    z-index: 1;
+}
+  
+nav {
+    background-color: none;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0em;
+}
+  
+nav ul {
+    margin: 0;
+    padding: 0.5em 10em 0 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: none;
+}
+  
+  nav li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    mix-blend-mode: screen;
+    font-size: 1.1rem;
+  }
+  
+  nav li a:hover,
+  nav .menu-btn:hover {
+    color: grey;
+  }
+  
+  nav .logo {
+    display: block;
+    float: left;
+    padding: 0.2em 1em 0.2em 8em;
+    width: 5em;
+  }
+
+  nav .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+
+  nav .menu-icon {
+    cursor: pointer;
+    display: block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+    float: right;
+  }
+  
+  nav .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  nav .menu-icon .navicon:before,
+  nav .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  nav .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  nav .menu-icon .navicon:after {
+    top: -5px;
+  }
+
+  nav .menu-btn {
+    display: none;
+  }
+  
+  nav .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  nav .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  nav .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  nav .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+#home {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0em;
+    z-index: 3;
+}
+
+#home .home-container {
+    display: flex;
+    position: relative;
+    top: 7em;
+    justify-content: space-around;
+    padding: 0em 0em;
+}
+
+#home .home-hero {
+    width: 100%;
+    width: 100em;
+}
+
+#home .home-text-container {
+    width:100%;
+    height: auto;
+    position: relative;
+    top: 9em;
+    left: 0em;
+    padding-left: 5em;
+}
+
+#home .home-text-container h1 {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+#home .home-text-container h3 {
+    position: relative;
+    top: -0.5em;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#home .home-text-container a {
+    position: relative;
+    top: 0.1em;
+    font-size: 1rem;
+    background-color: #5956E9;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    color: white;
+}
+
+
+
+
+
+
+
+  @media (min-width: 48em) {
+    nav li {
+      float: left;
+    }
+    nav li a {
+      padding: 20px 30px;
+    }
+    nav .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    nav .menu-icon {
+      display: none;
+    }
+  }
+  
